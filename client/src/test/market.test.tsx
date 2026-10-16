@@ -45,7 +45,7 @@ describe("Watchlist", () => {
 
     expect(screen.getByText("BTC")).toBeInTheDocument();
     expect(screen.getByText("ETH")).toBeInTheDocument();
-    expect(screen.getByText(/65,000\.00/)).toBeInTheDocument();
+    expect(screen.getByText("$65,000.00")).toBeInTheDocument();
   });
 
   it("filters markets by search text", () => {
